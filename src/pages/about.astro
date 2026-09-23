@@ -1,8 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const title = 'About';
-const description = 'About your blog.';
+const title = 'About — ban the beep';
+const description = 'Why tonal backup beepers fail, and what works instead.';
 const permalink = `${Astro.site.href}about`;
 ---
 
@@ -18,12 +18,33 @@ const permalink = `${Astro.site.href}about`;
         <a href="https://icons8.com/illustrations" target="_blank" rel="noopener">Ouch!</a>
       </figcaption>
     </figure>
-    <p>Text placeholder via <a href="https://jeffsum.com/" target="_blank">Jeffsum</a>.</p>
-    <p>So you two dig up, dig up dinosaurs? What do they got in there? King Kong? My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard! Life finds a way. God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs.</p>
-    <p>You really think you can fly that thing? You know what? It is beets. I've crashed into a beet truck. Forget the fat lady! You're obsessed with the fat lady! Drive us out of here! Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?</p>
-    <p>Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Hey, take a look at the earthlings. Goodbye! I was part of something special. Just my luck, no ice. You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?</p>
-    <p>Jaguar shark! So tell me - does it really exist? This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Yes, Yes, without the oops! You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?</p>
-    <p>Yes, Yes, without the oops! Do you have any idea how long it takes those cups to decompose. They're using our own satellites against us. And the clock is ticking. Do you have any idea how long it takes those cups to decompose. My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard!</p>
+    <h2>What's wrong with the beep?</h2>
+    <p>The standard backup beeper <em>is fatiguing.</em></p>
+    <p>
+      OSHA found standard backup beepers failed to prevent backover accidents in <strong>66%</strong> of accidents.
+    </p>
+    <p class="source">Source: U.S. OSHA investigation.</p>
+
+    <h3>Acoustic design flaw</h3>
+    <p>
+      Traditional backup alarms focus <strong>100% of their acoustic energy</strong> into a single, razor-sharp frequency spike — usually around 1,000 Hz.
+    </p>
+
+    <h3>Extreme dead zones</h3>
+    <p>
+      Sound levels vary by as much as <strong>20 dB over distances as short as 6 inches</strong> — meaning you can be standing right next to a reversing vehicle and hear nothing.
+    </p>
+
+    <p>
+      <strong>Cry-wolf effect:</strong> backup beepers are so common their warnings lose authority. Studies show preschoolers show <em>zero</em> avoidance behaviour when a beeping vehicle reverses toward them.
+    </p>
+
+    <h2>Beyond the alarm entirely</h2>
+    <p>The technology exists. The law allows it. <em>Industry just hasn't caught up.</em></p>
+    <p>
+      Vehicles with reversing cameras are <strong>41% less likely</strong> to be involved in a back-over crash.
+    </p>
+    <p class="source">Source: MUARC study.</p>
   </div>
 </BaseLayout>
 
@@ -37,6 +58,12 @@ const permalink = `${Astro.site.href}about`;
   .about-image img {
     border-radius: 8px;
     margin-bottom: 1.5em;
+  }
+
+  .source {
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-top: -0.4em;
   }
 
   @media (max-width: 1020px) {
